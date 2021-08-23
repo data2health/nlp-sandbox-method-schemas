@@ -1,0 +1,60 @@
+# List of programming languages identified by PyPi
+description: A programming language
+type: string
+enum:
+  - APL
+  - ASP
+  - Ada
+  - Assembly
+  - Awk
+  - Basic
+  - C
+  - C#
+  - C++
+  - Clojure
+  - Cython
+  - Dart
+  - Delphi/Kylix
+  - Emacs-Lisp
+  - Erlang
+  - Euler
+  - Forth
+  - Fortran
+  - Go
+  - Groovy
+  - Haskell
+  - Java
+  - JavaScript
+  - Julia
+  - Kotlin
+  - Lisp
+  - Logo
+  - MATLAB
+  - ML
+  - OCaml
+  - Object Pascal
+  - Objective C
+  - Other
+  - Other Scripting Engines
+  - PHP
+  - PL/SQL
+  - Pascal
+  - Perl
+  - Pike
+  - Prolog
+  - Python
+  - R
+  - REBOL
+  - Rexx
+  - Ruby
+  - Rust
+  - Scala
+  - Scheme
+  - SQL
+  - Tcl
+  - TypeScript
+  - Unix Shell
+  - Visual Basic
+  - YACC
+  - Zope
+example: Python

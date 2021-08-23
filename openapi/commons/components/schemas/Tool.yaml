@@ -39,6 +39,13 @@ properties:
     type: string
     minLength: 1
     pattern: "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+  programmingLanguages:
+    description: The programming languages used to develop this tool
+    type: array
+    items:
+      $ref: ../parameters/ProgrammingLanguage.yaml
+    minItems: 1
+    uniqueItems: true
 required:
   - name
   - version
@@ -50,6 +57,7 @@ required:
   - url
   - type
   - apiVersion
+  - programmingLanguages
 example:
   name: awesome-nlp-tool
   version: 1.0.6
@@ -61,3 +69,6 @@ example:
   url: https://example.com
   type: nlpsandbox:date-annotator
   apiVersion: 1.2.0
+  programmingLanguages:
+    - Python
+    - Scala
