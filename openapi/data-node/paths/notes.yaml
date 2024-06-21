@@ -17,6 +17,8 @@ post:
   summary: Create a note
   description: Create a note
   operationId: createNote
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: noteId
@@ -48,6 +50,8 @@ get:
   summary: List notes
   description: Returns the notes in a FHIR store
   operationId: listNotes
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

@@ -11,6 +11,8 @@ post:
   summary: Create a FHIR store
   description: Create a FHIR store with the ID specified
   operationId: createFhirStore
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: fhirStoreId
@@ -42,6 +44,8 @@ get:
   summary: List the FHIR stores in a dataset
   description: Returns the FHIR stores
   operationId: listFhirStores
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

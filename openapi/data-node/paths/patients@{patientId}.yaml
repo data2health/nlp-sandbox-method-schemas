@@ -23,6 +23,8 @@ get:
   summary: Get a FHIR patient
   description: Returns the FHIR patient specified
   operationId: getPatient
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -40,6 +42,8 @@ delete:
   summary: Delete a FHIR patient
   description: Deletes the FHIR patient specified
   operationId: deletePatient
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success

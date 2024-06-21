@@ -17,6 +17,8 @@ get:
   summary: Get an annotation store
   description: Returns the annotation store specified
   operationId: getAnnotationStore
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -34,6 +36,8 @@ delete:
   summary: Delete an annotation store
   description: Deletes the annotation store specified
   operationId: deleteAnnotationStore
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success

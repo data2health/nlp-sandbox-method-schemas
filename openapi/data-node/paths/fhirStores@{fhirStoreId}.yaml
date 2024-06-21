@@ -17,6 +17,8 @@ get:
   summary: Get a FHIR store
   description: Returns the FHIR store specified
   operationId: getFhirStore
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -34,6 +36,8 @@ delete:
   summary: Delete a FHIR store
   description: Deletes the FHIR store specified
   operationId: deleteFhirStore
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success

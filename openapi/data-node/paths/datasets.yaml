@@ -4,6 +4,8 @@ post:
   summary: Create a dataset
   description: Create a dataset with the name specified
   operationId: createDataset
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: datasetId
@@ -35,6 +37,8 @@ get:
   summary: Get all datasets
   description: Returns the datasets
   operationId: listDatasets
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

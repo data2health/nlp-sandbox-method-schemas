@@ -11,6 +11,8 @@ get:
   summary: Get a dataset by ID
   description: Returns the dataset for a given ID
   operationId: getDataset
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -28,6 +30,8 @@ delete:
   summary: Delete a dataset by ID
   description: Deletes the dataset for a given ID
   operationId: deleteDataset
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success

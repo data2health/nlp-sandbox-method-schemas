@@ -17,6 +17,8 @@ post:
   summary: Create an annotation
   description: Create an annotation
   operationId: createAnnotation
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: annotationId
@@ -48,6 +50,8 @@ get:
   summary: List the annotations in an annotation store
   description: Returns the annotations in an annotation store
   operationId: listAnnotations
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

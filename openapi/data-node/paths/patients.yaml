@@ -17,6 +17,8 @@ post:
   summary: Create a FHIR patient
   description: Create a FHIR patient
   operationId: createPatient
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: patientId
@@ -48,6 +50,8 @@ get:
   summary: List the Patients in a FHIR store
   description: Returns the Patients in a FHIR store
   operationId: listPatients
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

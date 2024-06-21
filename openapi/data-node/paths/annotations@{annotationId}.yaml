@@ -23,6 +23,8 @@ get:
   summary: Get an annotation
   description: Returns the annotation specified
   operationId: getAnnotation
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -40,6 +42,8 @@ delete:
   summary: Delete an annotation
   description: Deletes the annotation specified
   operationId: deleteAnnotation
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success

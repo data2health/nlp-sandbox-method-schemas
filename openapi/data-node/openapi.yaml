@@ -71,3 +71,8 @@ paths:
     $ref: paths/notes@{noteId}.yaml
   /healthCheck:
     $ref: ../commons/paths/healthCheck.yaml
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      $ref: components/securitySchemes/ApiKeyAuth.yaml

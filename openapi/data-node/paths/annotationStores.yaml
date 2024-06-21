@@ -11,6 +11,8 @@ post:
   summary: Create an annotation store
   description: Create an annotation store with the ID specified
   operationId: createAnnotationStore
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: annotationStoreId
@@ -42,6 +44,8 @@ get:
   summary: List the annotation stores in a dataset
   description: Returns the annotation stores
   operationId: listAnnotationStores
+  security:
+    - ApiKeyAuth: []
   parameters:
     - in: query
       name: limit

@@ -23,6 +23,8 @@ get:
   summary: Get a note
   description: Returns the note specified
   operationId: getNote
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
@@ -40,6 +42,8 @@ delete:
   summary: Delete a note
   description: Deletes the note specified
   operationId: deleteNote
+  security:
+    - ApiKeyAuth: []
   responses:
     '200':
       description: Success
